@@ -1,0 +1,422 @@
+/* Medium (500) */
+@font-face {
+font-family: 'Montserrat';
+src: url('fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+
+/* SemiBold (600) */
+@font-face {
+font-family: 'Montserrat';
+src: url('fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+font-weight: 600;
+font-style: normal;
+}
+
+/* Bold (700) */
+@font-face {
+font-family: 'Montserrat';
+src: url('fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'DS Pixel Cyr';
+src: url('fonts/DSPIXELCYR.TTF') format('truetype');
+font-display: swap; /* Чтобы текст не "прыгал" при загрузке */
+}
+
+
+
+
+body{
+    margin: 0;
+    background-color: #0D0D0D;
+    color: #E6E6E6;
+}
+.roof_img{
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 16px 20px 0;
+}
+.roof_img div{
+    width: 100%;
+    height: 240px;
+    background-image: url('images/roof_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+
+
+.info_about_roof{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.roof_heading{
+    font-family: 'DS Pixel Cyr', monospace;
+    font-size: 40px;
+    -webkit-font-smoothing: none;
+    letter-spacing: -0.02em;
+    line-height: 109%;
+    color: #E6E6E6;
+    margin: 0px;
+}
+.items_container-1-2{
+    width: 100%;
+    display: flex;
+    column-gap: 16px;
+}
+
+
+/* ПЛОЩАДЬ */
+.info_item1{
+    width: -webkit-fill-available;
+    height: 192px;
+    background-color: #121212;
+    border-radius: 20px;
+    border: #E6E6E6 solid 1px;
+    padding: 32px 16px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.roof_info_icon{
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+.info_item1 p{
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 600; 
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #E6E6E6;
+  line-height: 109%;
+  margin: 0px;
+}
+.info_item1 span {
+    font-family: 'DS Pixel Cyr', monospace;
+    font-size: 24px;
+    -webkit-font-smoothing: none;
+    letter-spacing: -0.02em;
+    font-weight: lighter;
+    color: #E6E6E6;
+    margin: 0px;
+}
+
+
+/* ВЫСОТА */
+.info_item2{
+    width: -webkit-fill-available;
+    height: 192px;
+    background-color: #4790FE;
+    border-radius: 20px 163px 20px 20px;
+    border: rgba(230, 230, 230, 0.26) solid 1px;
+    padding: 32px 16px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info_item2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #072148;
+    line-height: 109%;
+    margin: 0px;
+}
+.info_item2 span {
+    font-family: 'DS Pixel Cyr', monospace;
+    font-size: 24px;
+    -webkit-font-smoothing: none;
+    letter-spacing: -0.02em;
+    font-weight: lighter;
+    color: #072148;
+    margin: 0px;
+}
+
+
+/* СМОТРОВАЯ ПЛОЩАДКА */
+.items_container-3{
+    z-index: 9;
+    width: 100%;
+    height: 192px;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    border: #333333 solid 1px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #121212;
+    background-image: radial-gradient(
+        ellipse at bottom, 
+        rgb(28 225 91 / 31%) -70%,
+        rgba(18, 18, 18, 0.01) 40%);
+  /* background-blend-mode: overlay; */
+}
+.items_container-3 p{
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 600; 
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #E6E6E6;
+  line-height: 109%;
+  margin: 0px;
+}
+.items_container-3 span {
+    font-family: 'DS Pixel Cyr', monospace;
+    font-size: 24px;
+    -webkit-font-smoothing: none;
+    letter-spacing: -0.02em;
+  line-height: 109%;
+    font-weight: lighter;
+    color: #E6E6E6;
+    margin: 0px;
+}
+.items_container-3-image {
+    width: 100%;
+    height: 192px;
+    z-index: 10;
+    background-image: url('images/roof_info3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.items_container-4-5{
+    width: 100%;
+    display: flex;
+    column-gap: 16px;
+}
+
+
+/* БЕСПЛАТНЫЕ СОБЫТИЯ */
+.info_item4{
+    width: -webkit-fill-available;
+    min-width: 192px;
+    height: 192px;
+    background-color: #EB6BA8;
+    border-radius: 100px;
+    border:  rgba(230, 230, 230, 0.26) solid 1px;
+    padding: 48px 0 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.info_item4 p{
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 600; 
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #4D0533;
+  line-height: 109%;
+  margin: 0px;
+}
+.info_item4 span {
+    font-family: 'DS Pixel Cyr', monospace;
+    font-size: 24px;
+    -webkit-font-smoothing: none;
+    letter-spacing: -0.02em;
+    font-weight: lighter;
+    color: #4D0533;
+    margin: 0px;
+}
+
+
+/* ВИД НА ЛИГОВСКИЙ */
+.info_item5{
+    width: -webkit-fill-available;
+    height: 192px;
+    background-color: #121212;
+    border-radius: 20px;
+    border: #E6E6E6 solid 1px;
+    padding: 32px 16px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info_item5 p{
+    font-family: 'Montserrat', sans-serif;
+  font-weight: 600; 
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #E6E6E6;
+  line-height: 109%;
+  margin: 0px;
+}
+.info_item5 span {
+    font-family: 'DS Pixel Cyr', monospace;
+    font-size: 24px;
+    -webkit-font-smoothing: none;
+    letter-spacing: -0.02em;
+    font-weight: lighter;
+    line-height: 109%;
+    color: #E6E6E6;
+    margin: 0px;
+}
+.roof_info_icon5{
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    align-self: flex-end;
+}
+
+
+
+/* БОЛЬШЕ ИНФОРМАЦИИ О КРЫШЕ*/
+.more_info_about_roof{
+    width: 100%;
+    padding: 32px 0;
+    border-radius: 20px;
+    border: #414141 solid 1px;
+    background: 
+    radial-gradient(circle at left,rgba(192, 192, 192, 0.4) -90%, rgba(208, 65, 255, 0.001) 30%),
+    radial-gradient(circle at right,rgba(192, 192, 192, 0.4) -90%, rgba(208, 65, 255, 0.001) 30%),
+    #252525;
+    display: flex;
+    justify-content: center;
+}
+.more_info_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: flex-end;
+}
+.more_info_row_container{
+    display: flex;
+    column-gap: 16px;
+}
+.more_info_heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    color: #E6E6E6;
+    margin: 0px;
+}
+.more_info_text{
+    width: 168px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #898989;
+    margin: 0px;
+}
+
+
+
+/* ПРАВИЛА ПОСЕЩЕНИЯ */
+.visiting_rules{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.visiting_rules_heading{
+    font-family: 'DS Pixel Cyr', monospace;
+    font-size: 40px;
+    -webkit-font-smoothing: none;
+    letter-spacing: -0.02em;
+    line-height: 109%;
+    color: #E6E6E6;
+    margin: 0px;
+}
+.rules_container{
+    width: 100%;
+    display: flex;
+    column-gap: 16px;
+}
+.rule1{
+    width: -webkit-fill-available;
+    height: 296px;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    background: 
+    radial-gradient(circle at right,rgba(137, 137, 137, 0.3) -90%, rgba(18, 18, 18, 0.01) 30%),
+    #121212;
+    border-radius: 20px;
+    border: #333333 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rule1-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.rule1-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.rules_container p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #E6E6E6;
+    margin: 0px;
+}
+.rules_icon{
+    width: 40px;
+    object-fit: contain;
+    align-self: flex-end;
+}
+.rule-2-3_container{
+    width: -webkit-fill-available;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.rule2{
+    /* width: -webkit-fill-available; */
+    height: -webkit-fill-available;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    background: 
+    radial-gradient(circle at left bottom,rgba(137, 137, 137, 0.3) -90%, rgba(18, 18, 18, 0.01) 30%),
+    #121212;
+    border-radius: 20px;
+    border: #333333 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rule3{
+    /* width: -webkit-fill-available; */
+    height: -webkit-fill-available;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    background: 
+    radial-gradient(circle at left top,rgba(137, 137, 137, 0.3) -90%, rgba(18, 18, 18, 0.01) 30%),
+    #121212;
+    border-radius: 20px;
+    border: #333333 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
